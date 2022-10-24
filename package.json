@@ -8,10 +8,6 @@
     "build": "node scripts/build.js",
     "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@code.inke.cn:gz/web/hpchat/hpchat-website.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -25,7 +21,6 @@
   "dependencies": {
     "@vitejs/plugin-legacy": "^2.2.0",
     "chalk": "^4.1.2",
-    "gsap": "^3.11.1",
     "html-minifier-terser": "^7.0.0"
   }
 }
