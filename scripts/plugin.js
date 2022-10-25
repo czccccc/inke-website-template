@@ -27,16 +27,18 @@ const packStatic = (rootPath, static) => {
   return {
     name: 'pack-static',
     writeBundle(outputOptions) {
+      if (!static) {
+        return;
+      }
       if (!Array.isArray(static)) {
         static = [static];
       }
-      static.forEach &&
-        static.forEach((item) => {
-          copy(
-            resolve(rootPath, item.input || item),
-            resolve(outputOptions.dir, item.output || item)
-          );
-        });
+      static.forEach((item) => {
+        copy(
+          resolve(rootPath, item.input || item),
+          resolve(outputOptions.dir, item.output || item)
+        );
+      });
     },
   };
 };

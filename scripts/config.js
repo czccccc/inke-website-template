@@ -5,21 +5,18 @@ const devSrcPath = resolve(__dirname, '../src');
 
 const configs = [
   // {
-  //   input: 'happychat',
-  //   output: 'happychat',
+  //   input: 'demo',
+  //   output: 'demo',
+  //   静态文件 支持文件夹
+  //   static: 'app-ads.txt',
+  //   static: [
+  //     'app-ads.txt',
+  //     {
+  //       input: 'a',
+  //       output: 'b',
+  //     },
+  //   ],
   // },
-  {
-    input: 'happychat2',
-    output: 'happychat21212121',
-    // static: [
-    //   'app-ads.txt',
-    //   {
-    //     input: 'a',
-    //     output: 'b',
-    //   },
-    // ],
-    static: 'app-ads.txt',
-  },
 ];
 
 module.exports = {
